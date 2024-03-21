@@ -1,180 +1,75 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Unfold &mdash; A onepage portfolio HTML template by Colorlib</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head>
+  <title>Grant Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Gary Yong">
+  <link rel="stylesheet" href="assets/css/main.css">
 
-    <meta name="description" content="">
-    <meta name="keywords" content="html, css, javascript, jquery">
-    <meta name="author" content="">
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+  }
 
-    <!-- Theme Style -->
-    <link rel="stylesheet" href="assets/css/photoshop.css">
+  .title {
+    text-align: center;
+    color: #98ABEE;
+    padding-bottom: 20px;
+  }
 
-  </head>
-  <body data-spy="scroll" data-target=".site-nav-target" data-offset="200">
+  .container-img {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        outline: 30px solid #010100;
+    }
 
-        <!-- END lines -->
-      
+    .column {
+        flex: 0 0 calc(33.33% - 10px); /* Each column occupies 30% of the viewport height */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
 
-      <!-- END .cover-v1 -->
+    .column img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
 
-
-      <div class="unslate_co--section" id="portfolio-section">
-        <div class="container">
-          
-          
-          <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
-          <div id="portfolio-single-holder"></div>
-
-          <div class="portfolio-wrapper">
-
-            <div class="d-flex align-items-center mb-4 gsap-reveal gsap-reveal-filter">
-              <h2 class="mr-auto heading-h2"><span class="gsap-reveal">Portfolio</span></h2>
-
-              <!-- <a href="#" class="text-white js-filter d-inline-block d-lg-none">Filter</a>
-              
-              <div class="filter-wrap">
-                <div class="filter ml-auto" id="filters">
-                  <a href="#" class="active" data-filter="*">All</a>
-                  <a href="#" data-filter=".web">Web</a>
-                  <a href="#" data-filter=".branding">Branding</a>
-                  <a href="#" data-filter=".illustration">Illustration</a>
-                  <a href="#" data-filter=".packaging">Packaging</a>
-                </div>
-              </div> -->
-            </div>
-
-
-            
-            <div id="posts" class="row gutter-isotope-item">
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Shoe Rebranding</h3>
-                        <p>web, branding</p>
-                      </div>
-                    </div>
-                    <img src="images/work_1_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-              <div class="item branding packaging illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2 ">
-                <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="3">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Reworking</h3>
-                        <p>branding, packaging, illustration</p>
-                      </div>
-                    </div>
-                    <img src="images/work_2_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-4.html" class="portfolio-item isotope-item gsap-reveal-img ajax-load-page" data-id="4">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Modern Building</h3>
-                        <p>branding, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_3_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-
-                <a href="images/work_4_full.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Watch">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Watch</h3>
-                        <p>web, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_4_full.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-
-              </div>
-
-              <div class="item illustration packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_5_md.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Shoe Rebranding">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Shoe Rebranding</h3>
-                        <p>illustration, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_5_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page item-portrait isotope-item gsap-reveal-img" data-id="2">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-link2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Reshape</h3>
-                        <p>web, branding</p>
-                      </div>
-                    </div>
-                    <img src="images/work_6_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item branding packaging col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_7_a_md.jpg" class="portfolio-item item-portrait isotope-item gsap-reveal-img " data-fancybox="gallery" data-caption="Modern Building">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Modern Building</h3>
-                        <p>branding, packaging</p>
-                      </div>
-                    </div>
-                    <img src="images/work_7_a_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="https://www.youtube.com/watch?v=mwtbEGNABWU" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Showreel 2019">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-play_circle_filled"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Showreel 2019</h3>
-                        <p>web, branding</p>
-                      </div>
-                    </div>
-                    <img src="images/work_8_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-              <div class="item web illustration col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
-                <a href="images/work_9_a_md.jpg" class="portfolio-item isotope-item gsap-reveal-img" data-fancybox="gallery" data-caption="Render Packaging">
-                    <div class="overlay">
-                      <span class="wrap-icon icon-photo2"></span>
-                      <div class="portfolio-item-content">
-                        <h3>Render Packaging</h3>
-                        <p>web, illustration</p>
-                      </div>
-                    </div>
-                    <img src="images/work_9_a_md.jpg" class="lazyload  img-fluid" alt="Images" />
-                  </a>
-              </div>
-
-            </div>
-            
-          </div>
-
-
-        </div>
-      </div>  
-
-    
-  </body>
+<body>
+  <div class="title">
+    <h1>Photoshop</h1>
+  </div>
+<div class="container-img">
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 1">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 2">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 3">
+  </div>
+</div>
+<div class="container-img">
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 1">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 2">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 3">
+  </div>
+</div>
+</body>
 </html>
