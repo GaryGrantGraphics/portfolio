@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Grant Studio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="author" content="Gary Yong">
+  <link rel="stylesheet" href="assets/css/main.css">
+
+<style>
+  body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+  }
+
+  .title {
+    text-align: center;
+    color: #98ABEE;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .back-button {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    padding: 5px 10px;
+    background-color: #000;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .container-img {
+        display: flex;
+        justify-content: space-between;
+        height: 100vh;
+        outline: 30px solid #010100;
+    }
+
+    .column {
+        flex: 0 0 calc(33.33% - 10px); 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .column img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
+
+<body>
+    <div class="title">
+        <a href="index.html" class="back-button">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+        </a>
+        <h1>Other Works</h1>
+      </div>
+<div class="container-img">
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 1">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 2">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 3">
+  </div>
+</div>
+<div class="container-img">
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 1">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 2">
+  </div>
+  <div class="column">
+      <img class="image" src="./assets/img/about-visual.png" alt="Image 3">
+  </div>
+</div>
+</body>
+</html>
